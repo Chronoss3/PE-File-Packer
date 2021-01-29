@@ -9,7 +9,6 @@ SecSize:  dd 0xFEEDDA7A ; eax+8
 
 times (0x200 - ($-start)) db 0xcc
 
-; CC == opcode INT3 -> software breakpoint
 
 code:
   call $+5
